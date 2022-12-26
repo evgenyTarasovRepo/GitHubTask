@@ -1,8 +1,9 @@
-package com.example.githubtask;
+package com.example.githubtask.pages;
 
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
+import com.example.githubtask.pages.SoftAssertionsPage;
 
 import static com.codeborne.selenide.Selenide.*;
 
@@ -16,9 +17,7 @@ public class WikiPage {
      * */
     public SoftAssertionsPage openSoftAssertions() {
         showMoreBtn.click();
-        pages.last()
-                .shouldBe(Condition.visible)
-                .click();
+        pages.last().click();
         return new SoftAssertionsPage();
     }
 }

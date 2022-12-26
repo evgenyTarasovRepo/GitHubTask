@@ -1,4 +1,4 @@
-package com.example.githubtask;
+package com.example.githubtask.pages;
 
 import com.codeborne.selenide.SelenideElement;
 
